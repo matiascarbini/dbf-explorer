@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+
+{% block title %}DBF Explorer{% endblock %}
+
+{% block content %}
+  <section class="panel">
+    <div class="page-header">
+      <div>
+        <h1>Archivos disponibles</h1>
+        <p class="muted">Origen montado: <code>{{ dbf_root }}</code></p>
+      </div>
+      {% if files %}
+        <div class="stats">
+          <div><strong>{{ summary.table_count }}</strong> tablas</div>
+          <div><strong>{{ "{:,}".format(summary.record_count).replace(",", ".") }}</strong> registros totales</div>
+        </div>
+      {% endif %}
+    </div>
+
+    {% if not dbf_root_exists %}
+      <div class="empty-state">
+        <p>La carpeta montada no existe dentro del contenedor.</p>
+        <p>Revisá la variable <code>DBF_SOURCE_DIR</code> o el volumen configurado en <code>docker-compose.yml</code>.</p>
+      </div>
+    {% elif not files %}
+      <div class="empty-state">
+        <p>No se encontraron archivos <code>.dbf</code> dentro de la carpeta montada.</p>
+      </div>
+    {% else %}
+      <div class="quick-links">
+        <a class="card-link" href="{{ url_for('analysis') }}">
+          <strong>Analisis del modelo</strong>
+          <span>Ver tablas, roles y relaciones probables.</span>
+        </a>
+        <a class="card-link" href="{{ url_for('sql_console') }}">
+          <strong>Consola SQL</strong>
+          <span>Hacer cruces entre tablas con ayuda de campos y ejemplos.</span>
+        </a>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Archivo</th>
+              <th>Registros</th>
+              <th>Que parece contener</th>
+              <th>Carpeta</th>
+              <th>Tamaño</th>
+              <th>Modificado</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for file in files %}
+              <tr>
+                <td>
+                  <strong>{{ file.name }}</strong>
+                  {% if file.role %}
+                    <div class="cell-note">{{ file.role }}</div>
+                  {% endif %}
+                </td>
+                <td>
+                  {% if file.record_count is not none %}
+                    <strong>{{ "{:,}".format(file.record_count).replace(",", ".") }}</strong>
+                  {% else %}
+                    <span class="muted">-</span>
+                  {% endif %}
+                </td>
+                <td class="description-cell">
+                  <div>{{ file.description }}</div>
+                  {% if file.preview_text %}
+                    <div class="cell-note"><code>{{ file.preview_text }}</code></div>
+                  {% endif %}
+                </td>
+                <td><code>{{ file.directory }}</code></td>
+                <td>{{ human_size(file.size_bytes) }}</td>
+                <td>{{ file.modified_at.strftime("%Y-%m-%d %H:%M") }}</td>
+                <td class="actions-cell">
+                  <a class="button" href="{{ url_for('table_detail', relative_path=file.relative_path) }}">Abrir</a>
+                  <a class="button secondary" href="{{ url_for('sql_console') }}">SQL</a>
+                </td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    {% endif %}
+  </section>
+{% endblock %}

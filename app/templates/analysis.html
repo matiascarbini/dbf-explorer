@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+
+{% block title %}Analisis | DBF Explorer{% endblock %}
+
+{% block content %}
+  <section class="panel">
+    <div class="page-header">
+      <div>
+        <h1>Analisis aproximado del modelo</h1>
+        <p class="muted">Lectura heuristica a partir de nombres de tablas, campos y volumen de registros.</p>
+      </div>
+      <div class="stats">
+        <div><strong>{{ summary.table_count }}</strong> tablas</div>
+        <div><strong>{{ "{:,}".format(summary.record_count).replace(",", ".") }}</strong> registros</div>
+      </div>
+    </div>
+
+    <div class="quick-links compact">
+      <a class="card-link" href="{{ url_for('sql_console') }}">
+        <strong>Consola SQL</strong>
+        <span>Probar cruces y validar las relaciones propuestas.</span>
+      </a>
+    </div>
+
+    <h2>Tablas mas grandes</h2>
+    <div class="analysis-grid">
+      {% for table in summary.largest_tables %}
+        <article class="analysis-card">
+          <h3>{{ table.sql_name }}</h3>
+          <p>{{ table.description }}</p>
+          <p class="muted">{{ table.record_count }} registros · {{ table.field_count }} columnas · rol {{ table.role }}</p>
+        </article>
+      {% endfor %}
+    </div>
+
+    <h2>Relaciones probables</h2>
+    <div class="relation-list">
+      {% for relation in summary.relationships %}
+        <article class="relation-card">
+          <strong>{{ relation.left_table }}.{{ relation.left_field }}</strong>
+          <span class="relation-arrow">→</span>
+          <strong>{{ relation.right_table }}.{{ relation.right_field }}</strong>
+          <small>{{ relation.confidence }}</small>
+          <p>{{ relation.note }}</p>
+        </article>
+      {% endfor %}
+    </div>
+
+    <h2>Detalle por tabla</h2>
+    <div class="analysis-stack">
+      {% for table in summary.tables %}
+        <article class="analysis-table">
+          <div class="page-header">
+            <div>
+              <h3>{{ table.sql_name }}</h3>
+              <p class="muted">{{ table.description }}</p>
+            </div>
+            <div class="stats">
+              <div><strong>{{ table.record_count }}</strong> registros</div>
+              <div><strong>{{ table.field_count }}</strong> columnas</div>
+              <div><strong>{{ table.role }}</strong></div>
+            </div>
+          </div>
+
+          <div class="field-list">
+            {% for field in table.fields %}
+              <span class="field-chip">{{ field.name }} <small>{{ field.type }}{% if field.length %} / {{ field.length }}{% endif %}</small></span>
+            {% endfor %}
+          </div>
+
+          {% if table.sample_preview %}
+            <div class="sample-box">
+              <strong>Muestra del primer registro</strong>
+              <div class="sample-grid">
+                {% for key, value in table.sample_preview.items() %}
+                  <div><span>{{ key }}</span><code>{{ value }}</code></div>
+                {% endfor %}
+              </div>
+            </div>
+          {% endif %}
+        </article>
+      {% endfor %}
+    </div>
+  </section>
+{% endblock %}

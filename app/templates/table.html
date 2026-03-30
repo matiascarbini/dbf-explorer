@@ -1,0 +1,98 @@
+{% extends "base.html" %}
+
+{% block title %}{{ table_name }} | DBF Explorer{% endblock %}
+
+{% block content %}
+  <section class="panel">
+    <div class="page-header">
+      <div>
+        <a class="link-back" href="{{ url_for('index') }}">Volver al listado</a>
+        <h1>{{ table_name }}</h1>
+        <p class="muted"><code>{{ relative_path }}</code> · tabla SQL: <code>{{ sql_name }}</code></p>
+      </div>
+      <div class="stats">
+        <div><strong>{{ total_records }}</strong> registros</div>
+        <div><strong>{{ fields|length }}</strong> columnas</div>
+      </div>
+    </div>
+
+    {% if read_error %}
+      <div class="empty-state error-state">
+        <p>No se pudo leer la tabla.</p>
+        <p><code>{{ read_error }}</code></p>
+      </div>
+    {% else %}
+      <div class="quick-links compact">
+        <a class="card-link" href="{{ url_for('sql_console') }}">
+          <strong>Ir a SQL</strong>
+          <span>Usá <code>{{ sql_name }}</code> para consultar esta tabla.</span>
+        </a>
+      </div>
+
+      <div class="field-list">
+        {% for field in fields %}
+          <span class="field-chip">{{ field.name }} <small>{{ field.type }}{% if field.length %} / {{ field.length }}{% endif %}</small></span>
+        {% endfor %}
+      </div>
+
+      <div class="toolbar">
+        <form method="get" class="page-size-form">
+          <label for="page_size">Filas por página</label>
+          <select id="page_size" name="page_size" onchange="this.form.submit()">
+            {% for size in [50, 100, 200, 500] %}
+              <option value="{{ size }}" {% if size == page_size %}selected{% endif %}>{{ size }}</option>
+            {% endfor %}
+          </select>
+          <input type="hidden" name="page" value="1">
+        </form>
+
+        <div class="toolbar-actions">
+          {% if export_presets %}
+            {% for export_preset in export_presets %}
+              <a class="button" href="{{ url_for('table_export', relative_path=relative_path, export_key=export_preset.key) }}">{{ export_preset.label }}</a>
+            {% endfor %}
+          {% endif %}
+
+          <div class="pagination">
+            {% if page > 1 %}
+              <a class="button secondary" href="{{ url_for('table_detail', relative_path=relative_path, page=page-1, page_size=page_size) }}">Anterior</a>
+            {% endif %}
+            <span>Página {{ page }} de {{ total_pages }}</span>
+            {% if page < total_pages %}
+              <a class="button secondary" href="{{ url_for('table_detail', relative_path=relative_path, page=page+1, page_size=page_size) }}">Siguiente</a>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>#</th>
+              {% for field in fields %}
+                <th>{{ field.name }}</th>
+              {% endfor %}
+            </tr>
+          </thead>
+          <tbody>
+            {% if rows %}
+              {% for row in rows %}
+                <tr>
+                  <td class="row-number">{{ row.row_number }}</td>
+                  {% for value in row.cells %}
+                    <td title="{{ value }}">{{ value }}</td>
+                  {% endfor %}
+                </tr>
+              {% endfor %}
+            {% else %}
+              <tr>
+                <td colspan="{{ fields|length + 1 }}">La tabla no tiene registros.</td>
+              </tr>
+            {% endif %}
+          </tbody>
+        </table>
+      </div>
+    {% endif %}
+  </section>
+{% endblock %}

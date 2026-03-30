@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}DBF Explorer{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="topbar-inner">
+        <div>
+          <a class="brand" href="{{ url_for('index') }}">DBF Explorer</a>
+          <p class="subtitle">Exploracion simple de DBF, analisis de esquema y consultas SQL de solo lectura.</p>
+        </div>
+        <nav class="nav-links">
+          <a href="{{ url_for('index') }}">Tablas</a>
+          <a href="{{ url_for('analysis') }}">Analisis</a>
+          <a href="{{ url_for('sql_console') }}">SQL</a>
+        </nav>
+      </div>
+    </header>
+    <main class="layout">
+      {% block content %}{% endblock %}
+    </main>
+  </body>
+</html>

@@ -1,0 +1,144 @@
+{% extends "base.html" %}
+
+{% block title %}SQL | DBF Explorer{% endblock %}
+
+{% block content %}
+  <section class="panel">
+    <div class="page-header">
+      <div>
+        <h1>Consola SQL</h1>
+        <p class="muted">Consultas de solo lectura sobre una cache SQLite generada desde tus DBF.</p>
+      </div>
+      <div class="stats">
+        <div><strong>{{ schema|length }}</strong> tablas</div>
+        <div><strong>{{ cache_meta.get("built_at", "sin cache") }}</strong></div>
+      </div>
+    </div>
+
+    <div class="sql-layout">
+      <div class="sql-main">
+        <form method="post" class="sql-form">
+          <label for="query"><strong>Consulta</strong></label>
+          <textarea id="query" name="query" spellcheck="false">{{ query }}</textarea>
+          <div class="toolbar">
+            <label class="inline-option">
+              <input type="checkbox" name="rebuild_cache" value="1">
+              Reconstruir cache antes de ejecutar
+            </label>
+            <button class="button" type="submit">Ejecutar</button>
+          </div>
+        </form>
+
+        {% if sql_error %}
+          <div class="empty-state error-state">
+            <p>Error de consulta.</p>
+            <p><code>{{ sql_error }}</code></p>
+          </div>
+        {% endif %}
+
+        {% if result %}
+          <div class="result-summary">
+            <span>{{ result.row_count }} filas devueltas</span>
+            <span>{{ result.elapsed_ms }} ms</span>
+            {% if result.cache_info.rebuilt %}
+              <span>cache reconstruida</span>
+            {% endif %}
+            {% if result.truncated %}
+              <span>resultado truncado a {{ result.row_count }} filas</span>
+            {% endif %}
+          </div>
+
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  {% for column in result.columns %}
+                    <th>{{ column }}</th>
+                  {% endfor %}
+                </tr>
+              </thead>
+              <tbody>
+                {% for row in result.rows %}
+                  <tr>
+                    {% for value in row %}
+                      <td title="{{ value }}">{{ value }}</td>
+                    {% endfor %}
+                  </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        {% endif %}
+
+        <h2>Consultas de ejemplo</h2>
+        <div class="example-list">
+          {% for example in examples %}
+            <button class="button secondary example-button" type="button" data-snippet="{{ example.sql|e }}">{{ example.title }}</button>
+          {% endfor %}
+        </div>
+
+        <h2>Relaciones sugeridas</h2>
+        <div class="relation-list">
+          {% for relation in relationships %}
+            <article class="relation-card">
+              <strong>{{ relation.left_table }}.{{ relation.left_field }}</strong>
+              <span class="relation-arrow">→</span>
+              <strong>{{ relation.right_table }}.{{ relation.right_field }}</strong>
+              <small>{{ relation.confidence }}</small>
+              <p>{{ relation.note }}</p>
+            </article>
+          {% endfor %}
+        </div>
+      </div>
+
+      <aside class="sql-sidebar">
+        <h2>Esquema</h2>
+        <p class="muted">Hacé clic para copiar tablas o columnas al editor.</p>
+        {% for table in schema %}
+          <details class="schema-block">
+            <summary>
+              <button type="button" class="insert-token table-token" data-token="{{ table.sql_name }}">{{ table.sql_name }}</button>
+              <small>{{ table.record_count }} filas</small>
+            </summary>
+            <div class="schema-fields">
+              {% for field in table.fields %}
+                <button type="button" class="insert-token field-token" data-token="{{ table.sql_name }}.{{ field.name }}">{{ field.name }}</button>
+              {% endfor %}
+            </div>
+          </details>
+        {% endfor %}
+      </aside>
+    </div>
+  </section>
+
+  <script>
+    (function () {
+      const textarea = document.getElementById("query");
+      if (!textarea) return;
+
+      const insertText = (value, replace = false) => {
+        if (replace) {
+          textarea.value = value;
+          textarea.focus();
+          return;
+        }
+        const start = textarea.selectionStart;
+        const end = textarea.selectionEnd;
+        const prefix = textarea.value.slice(0, start);
+        const suffix = textarea.value.slice(end);
+        textarea.value = prefix + value + suffix;
+        const caret = start + value.length;
+        textarea.setSelectionRange(caret, caret);
+        textarea.focus();
+      };
+
+      document.querySelectorAll(".insert-token").forEach((button) => {
+        button.addEventListener("click", () => insertText(button.dataset.token));
+      });
+
+      document.querySelectorAll(".example-button").forEach((button) => {
+        button.addEventListener("click", () => insertText(button.dataset.snippet, true));
+      });
+    })();
+  </script>
+{% endblock %}

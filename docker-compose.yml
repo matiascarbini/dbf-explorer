@@ -1,0 +1,13 @@
+services:
+  dbf-explorer:
+    build: .
+    container_name: dbf-explorer
+    ports:
+      - "8000:8000"
+    environment:
+      DBF_ROOT: /data/dbf
+      DBF_ENCODING: ${DBF_ENCODING:-latin1}
+      DBF_PAGE_SIZE: ${DBF_PAGE_SIZE:-100}
+    volumes:
+      - ${DBF_SOURCE_DIR:-./dbf-data}:/data/dbf:ro
+    restart: unless-stopped

@@ -5,6 +5,7 @@ import math
 import os
 import re
 import sqlite3
+from collections import defaultdict
 from datetime import date, datetime
 from decimal import Decimal
 from functools import lru_cache
@@ -63,7 +64,53 @@ TABLE_EXPORT_PRESETS = {
             "skip_if_all_blank": ["COD_PLA", "NOM_PLA"],
             "filename_suffix": "codigo-descripcion",
         }
-    ]
+    ],
+    "ARC_ASO": [
+        {
+            "key": "socios",
+            "label": "Descargar JSON \"grupos familiares\"",
+            "description": "Genera un JSON agrupado por asociado con cabecera e integrantes.",
+            "group_by": "COD_ASO",
+            "items_key": "items",
+            "header_field_map": {
+                "COD_ASO": "codigo",
+                "NOM_ASO": "referencia",
+                "PLA_ASO": "tipo_grupo_referencia",
+            },
+            "header_computed_values": {
+                "activo": {
+                    "source_field": "BAJ_ASO",
+                    "operator": "is_blank",
+                    "true_value": True,
+                    "false_value": False,
+                }
+            },
+            "header_required_not_blank": ["PLA_ASO"],
+            "header_excluded_values": {
+                "PLA_ASO": ["IN"],
+            },
+            "item_field_map": {
+                "COD_ASO": "codigo",
+                "ORD_ASO": "orden",
+                "NOM_ASO": "nombre",
+                "DIR_ASO": "direccion",
+                "CPO_ASO": "codigo_postal",
+                "LOC_ASO": "localidad",
+                "PRO_ASO": "provincia",
+                "TEL_ASO": "telefono",
+                "CEL_ASO": "celular",
+                "NAC_ASO": "nacimiento",
+                "TDO_ASO": "tipo_documento",
+                "DOC_ASO": "documento",
+                "PLA_ASO": "plan",
+                "COB_ASO": "cobrador",
+                "ALT_ASO": "alta",
+                "BAJ_ASO": "baja",
+            },
+            "item_required_not_blank": ["NOM_ASO"],
+            "filename_suffix": "socios",
+        }
+    ],
 }
 
 MANUAL_RELATIONSHIPS = [
@@ -319,23 +366,169 @@ def get_table_export_preset(table_name: str, export_key: str) -> dict[str, Any] 
     return None
 
 
-def build_export_payload(table: DBF, preset: dict[str, Any]) -> list[dict[str, Any]]:
+def record_matches_export_filters(
+    record: Any,
+    required_not_blank: list[str] | None = None,
+    skip_if_all_blank: list[str] | None = None,
+    included_values: dict[str, list[Any]] | None = None,
+    excluded_values: dict[str, list[Any]] | None = None,
+) -> bool:
+    required_not_blank = required_not_blank or []
+    skip_if_all_blank = skip_if_all_blank or []
+    included_values = included_values or {}
+    excluded_values = excluded_values or {}
+
+    if required_not_blank:
+        required_values = [normalize_export_value(record[field_name]) for field_name in required_not_blank]
+        if any(value in (None, "") for value in required_values):
+            return False
+
+    for field_name, allowed_values in included_values.items():
+        value = normalize_export_value(record[field_name])
+        normalized_allowed_values = {normalize_export_value(item) for item in allowed_values}
+        if value not in normalized_allowed_values:
+            return False
+
+    for field_name, blocked_values in excluded_values.items():
+        value = normalize_export_value(record[field_name])
+        normalized_blocked_values = {normalize_export_value(item) for item in blocked_values}
+        if value in normalized_blocked_values:
+            return False
+
+    if skip_if_all_blank:
+        raw_values = [normalize_export_value(record[field_name]) for field_name in skip_if_all_blank]
+        if all(value in (None, "") for value in raw_values):
+            return False
+
+    return True
+
+
+def map_export_record(
+    record: Any,
+    field_map: dict[str, str],
+    static_values: dict[str, Any] | None = None,
+    computed_values: dict[str, Any] | None = None,
+) -> dict[str, Any]:
+    item = {target_key: normalize_export_value(record[source_field]) for source_field, target_key in field_map.items()}
+    item.update(build_computed_export_values(record, computed_values or {}))
+    item.update(static_values or {})
+    return item
+
+
+def build_computed_export_values(record: Any, computed_values: dict[str, Any]) -> dict[str, Any]:
+    resolved_values = {}
+
+    for target_key, config in computed_values.items():
+        operator = config.get("operator")
+        source_field = config.get("source_field")
+        source_value = normalize_export_value(record[source_field]) if source_field else None
+
+        if operator == "is_blank":
+            resolved_values[target_key] = config.get("true_value") if source_value in (None, "") else config.get(
+                "false_value"
+            )
+            continue
+
+        if operator == "is_not_blank":
+            resolved_values[target_key] = config.get("true_value") if source_value not in (None, "") else config.get(
+                "false_value"
+            )
+            continue
+
+        if "value" in config:
+            resolved_values[target_key] = config["value"]
+
+    return resolved_values
+
+
+def build_flat_export_payload(table: DBF, preset: dict[str, Any]) -> list[dict[str, Any]]:
     payload = []
     field_map = preset.get("field_map", {})
     static_values = preset.get("static_values", {})
+    computed_values = preset.get("computed_values", {})
+    required_not_blank = preset.get("required_not_blank", [])
     skip_if_all_blank = preset.get("skip_if_all_blank", [])
+    included_values = preset.get("included_values", {})
+    excluded_values = preset.get("excluded_values", {})
 
     for record in table:
-        if skip_if_all_blank:
-            raw_values = [normalize_export_value(record[field_name]) for field_name in skip_if_all_blank]
-            if all(value in (None, "") for value in raw_values):
-                continue
+        if not record_matches_export_filters(
+            record,
+            required_not_blank,
+            skip_if_all_blank,
+            included_values,
+            excluded_values,
+        ):
+            continue
 
-        item = {target_key: normalize_export_value(record[source_field]) for source_field, target_key in field_map.items()}
-        item.update(static_values)
-        payload.append(item)
+        payload.append(map_export_record(record, field_map, static_values, computed_values))
 
     return payload
+
+
+def build_grouped_export_payload(table: DBF, preset: dict[str, Any]) -> list[dict[str, Any]]:
+    payload = []
+    groups: dict[Any, dict[str, Any]] = {}
+    pending_items: dict[Any, list[dict[str, Any]]] = defaultdict(list)
+    group_by = preset["group_by"]
+    items_key = preset.get("items_key", "items")
+    header_field_map = preset.get("header_field_map", {})
+    header_static_values = preset.get("header_static_values", {})
+    header_computed_values = preset.get("header_computed_values", {})
+    header_required_not_blank = preset.get("header_required_not_blank", [])
+    header_skip_if_all_blank = preset.get("header_skip_if_all_blank", [])
+    header_included_values = preset.get("header_included_values", {})
+    header_excluded_values = preset.get("header_excluded_values", {})
+    item_field_map = preset.get("item_field_map", {})
+    item_static_values = preset.get("item_static_values", {})
+    item_computed_values = preset.get("item_computed_values", {})
+    item_required_not_blank = preset.get("item_required_not_blank", [])
+    item_skip_if_all_blank = preset.get("item_skip_if_all_blank", [])
+    item_included_values = preset.get("item_included_values", {})
+    item_excluded_values = preset.get("item_excluded_values", {})
+
+    for record in table:
+        group_value = normalize_export_value(record[group_by])
+        if group_value in (None, ""):
+            continue
+
+        if record_matches_export_filters(
+            record,
+            item_required_not_blank,
+            item_skip_if_all_blank,
+            item_included_values,
+            item_excluded_values,
+        ):
+            item = map_export_record(record, item_field_map, item_static_values, item_computed_values)
+            if group_value in groups:
+                groups[group_value][items_key].append(item)
+            else:
+                pending_items[group_value].append(item)
+
+        if group_value in groups:
+            continue
+
+        if not record_matches_export_filters(
+            record,
+            header_required_not_blank,
+            header_skip_if_all_blank,
+            header_included_values,
+            header_excluded_values,
+        ):
+            continue
+
+        group_item = map_export_record(record, header_field_map, header_static_values, header_computed_values)
+        group_item[items_key] = pending_items.pop(group_value, [])
+        groups[group_value] = group_item
+        payload.append(group_item)
+
+    return payload
+
+
+def build_export_payload(table: DBF, preset: dict[str, Any]) -> list[dict[str, Any]]:
+    if preset.get("group_by"):
+        return build_grouped_export_payload(table, preset)
+    return build_flat_export_payload(table, preset)
 
 
 def sqlite_type_for_field(field: Any) -> str:

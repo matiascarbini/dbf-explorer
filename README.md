@@ -35,13 +35,13 @@ http://localhost:8000
 Si tus archivos están en:
 
 ```text
-/home/matias/DESARROLLO/TEST/APRENDICES/bck-socios/socios/bases
+/ruta/a/un/directorio/con/bases
 ```
 
 podés ejecutar:
 
 ```bash
-DBF_SOURCE_DIR=/home/matias/DESARROLLO/TEST/APRENDICES/bck-socios/socios/bases docker compose up --build
+DBF_SOURCE_DIR=/ruta/a/un/directorio/con/bases docker compose up --build
 ```
 
 ## Notas

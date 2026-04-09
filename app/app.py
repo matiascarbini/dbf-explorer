@@ -141,6 +141,67 @@ TABLE_EXPORT_PRESETS = {
     ],
 }
 
+TABLE_EXPORT_PRESETS["MOV_ASO"] = [
+    {
+        "key": "cuotas_societarias",
+        "label": "Descargar JSON \"cuotas societarias\"",
+        "description": (
+            "Genera el historial de cuotas societarias por grupo/socio "
+            "para importar al sistema destino. Un registro por grupo por periodo."
+        ),
+        "sql_query": (
+            "SELECT d.COD_ASO, d.ORD_ASO, d.NOM_ASO, d.NOM_PLA, "
+            "d.IMP_PLA, d.IMP_MOV, d.PER_MOV, m.SAL_MOV, m.FEC_PAG "
+            "FROM DET_MOV d "
+            "LEFT JOIN MOV_ASO m ON m.COD_ASO = d.COD_ASO AND m.PER_MOV = d.PER_MOV "
+            "WHERE d.ORD_ASO = 0 "
+            "ORDER BY d.COD_ASO, d.PER_MOV"
+        ),
+        "field_map": {
+            "COD_ASO": "grupo_referencia_externa",
+            "NOM_ASO": "nombre_socio",
+            "NOM_PLA": "nombre_plan",
+            "IMP_PLA": "importe",
+            "IMP_MOV": "importe_cobrado",
+            "FEC_PAG": "fecha_pago",
+        },
+        "computed_values": {
+            "mes": {
+                "source_field": "PER_MOV",
+                "operator": "str_slice",
+                "start": 0,
+                "end": 2,
+                "cast": "int",
+            },
+            "anio": {
+                "source_field": "PER_MOV",
+                "operator": "str_slice",
+                "start": 2,
+                "end": 6,
+                "cast": "int",
+            },
+            "pago": {
+                "source_field": "SAL_MOV",
+                "operator": "equals_value",
+                "compare_to": 0,
+                "true_value": True,
+                "false_value": False,
+            },
+            "socio_referencia_externa": {
+                "source_fields": ["COD_ASO", "ORD_ASO"],
+                "operator": "concat",
+                "separator": "/",
+            },
+        },
+        "static_values": {
+            "societaria": True,
+            "forma_pago": None,
+            "disciplina_id": None,
+        },
+        "filename_suffix": "cuotas-societarias",
+    }
+]
+
 MANUAL_RELATIONSHIPS = [
     {
         "left_table": "ARC_ASO",
@@ -463,6 +524,31 @@ def build_computed_export_values(record: Any, computed_values: dict[str, Any]) -
             )
             continue
 
+        if operator == "str_slice":
+            s = str(source_value) if source_value is not None else ""
+            sliced = s[config.get("start", 0):config.get("end")]
+            if config.get("cast") == "int":
+                try:
+                    resolved_values[target_key] = int(sliced)
+                except (ValueError, TypeError):
+                    resolved_values[target_key] = None
+            else:
+                resolved_values[target_key] = sliced
+            continue
+
+        if operator == "concat":
+            source_fields = config.get("source_fields", [])
+            separator = config.get("separator", "")
+            parts = [str(normalize_export_value(record[f])) for f in source_fields if record.get(f) is not None]
+            resolved_values[target_key] = separator.join(parts)
+            continue
+
+        if operator == "equals_value":
+            resolved_values[target_key] = (
+                config.get("true_value") if source_value == config.get("compare_to") else config.get("false_value")
+            )
+            continue
+
         if "value" in config:
             resolved_values[target_key] = config["value"]
 
@@ -553,7 +639,27 @@ def build_grouped_export_payload(table: DBF, preset: dict[str, Any]) -> list[dic
     return payload
 
 
+def build_sql_export_payload(preset: dict[str, Any]) -> list[dict[str, Any]]:
+    build_sqlite_cache()
+    sql_query = preset["sql_query"]
+    field_map = preset.get("field_map", {})
+    static_values = preset.get("static_values", {})
+    computed_values = preset.get("computed_values", {})
+    payload = []
+    with sqlite3.connect(SQLITE_CACHE_PATH) as conn:
+        conn.row_factory = sqlite3.Row
+        for row in conn.execute(sql_query):
+            record = {k: normalize_export_value(v) for k, v in dict(row).items()}
+            item = {target_key: record.get(source_field) for source_field, target_key in field_map.items()}
+            item.update(build_computed_export_values(record, computed_values))
+            item.update(static_values)
+            payload.append(item)
+    return payload
+
+
 def build_export_payload(table: DBF, preset: dict[str, Any]) -> list[dict[str, Any]]:
+    if preset.get("sql_query"):
+        return build_sql_export_payload(preset)
     if preset.get("group_by"):
         return build_grouped_export_payload(table, preset)
     return build_flat_export_payload(table, preset)

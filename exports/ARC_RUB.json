@@ -1,0 +1,295 @@
+{
+  "table": "ARC_RUB",
+  "source_file": "/home/matias/DESARROLLO/TEST/ALPASO/bases/ARC_RUB.DBF",
+  "encoding": "latin1",
+  "record_count": 93,
+  "fields": [
+    {
+      "name": "NOM_RUB",
+      "type": "C",
+      "length": 15,
+      "decimal_count": 0
+    }
+  ],
+  "records": [
+    {
+      "NOM_RUB": "KIOSCO"
+    },
+    {
+      "NOM_RUB": "CONGELADOS"
+    },
+    {
+      "NOM_RUB": "BEBIDAS"
+    },
+    {
+      "NOM_RUB": "ALMACEN"
+    },
+    {
+      "NOM_RUB": "PERFUMERIA"
+    },
+    {
+      "NOM_RUB": "LACTEOS"
+    },
+    {
+      "NOM_RUB": "BALANZA"
+    },
+    {
+      "NOM_RUB": ""
+    },
+    {
+      "NOM_RUB": "VINOS"
+    },
+    {
+      "NOM_RUB": "GENERAL"
+    },
+    {
+      "NOM_RUB": "SNACKS"
+    },
+    {
+      "NOM_RUB": "BAZAR"
+    },
+    {
+      "NOM_RUB": "LIMPIEZA"
+    },
+    {
+      "NOM_RUB": "HELADOS"
+    },
+    {
+      "NOM_RUB": "PANIFICACION"
+    },
+    {
+      "NOM_RUB": "YOGUR"
+    },
+    {
+      "NOM_RUB": "GALLETITAS"
+    },
+    {
+      "NOM_RUB": "JUGOS"
+    },
+    {
+      "NOM_RUB": "AGUAS"
+    },
+    {
+      "NOM_RUB": "PANES"
+    },
+    {
+      "NOM_RUB": "PASTAS"
+    },
+    {
+      "NOM_RUB": "FIDEOS"
+    },
+    {
+      "NOM_RUB": "SIN TACC"
+    },
+    {
+      "NOM_RUB": "YERBAS"
+    },
+    {
+      "NOM_RUB": "LA VIRGINIA"
+    },
+    {
+      "NOM_RUB": ".ALMACEN"
+    },
+    {
+      "NOM_RUB": "CHOCOLATE"
+    },
+    {
+      "NOM_RUB": "TOSTADAS"
+    },
+    {
+      "NOM_RUB": "MAGDALENAS"
+    },
+    {
+      "NOM_RUB": "ACEITES"
+    },
+    {
+      "NOM_RUB": "HARINAS"
+    },
+    {
+      "NOM_RUB": "LECHE"
+    },
+    {
+      "NOM_RUB": "HIGIENE"
+    },
+    {
+      "NOM_RUB": "REPOSTERIA"
+    },
+    {
+      "NOM_RUB": "SALSAS"
+    },
+    {
+      "NOM_RUB": "ENLATADOS"
+    },
+    {
+      "NOM_RUB": "CEREALES"
+    },
+    {
+      "NOM_RUB": "MASITAS SECAS"
+    },
+    {
+      "NOM_RUB": "MERMELADAS"
+    },
+    {
+      "NOM_RUB": "BIZCOCHUELO"
+    },
+    {
+      "NOM_RUB": "GELATINA"
+    },
+    {
+      "NOM_RUB": "POLENTA"
+    },
+    {
+      "NOM_RUB": "LA SERENISIMA"
+    },
+    {
+      "NOM_RUB": "ESPECIAS"
+    },
+    {
+      "NOM_RUB": "ALICANTE"
+    },
+    {
+      "NOM_RUB": "0"
+    },
+    {
+      "NOM_RUB": "DEPIMIEL"
+    },
+    {
+      "NOM_RUB": "27ALMACEN"
+    },
+    {
+      "NOM_RUB": "CAFE"
+    },
+    {
+      "NOM_RUB": "TE"
+    },
+    {
+      "NOM_RUB": "TREGAR"
+    },
+    {
+      "NOM_RUB": "HELADERA"
+    },
+    {
+      "NOM_RUB": "GENER"
+    },
+    {
+      "NOM_RUB": "ALAMA"
+    },
+    {
+      "NOM_RUB": "ALMCEN"
+    },
+    {
+      "NOM_RUB": "ALMAMA"
+    },
+    {
+      "NOM_RUB": "ALMAS"
+    },
+    {
+      "NOM_RUB": "ALMA3"
+    },
+    {
+      "NOM_RUB": "FREEZER"
+    },
+    {
+      "NOM_RUB": "GENERAK"
+    },
+    {
+      "NOM_RUB": "ACLMACEN"
+    },
+    {
+      "NOM_RUB": "ALMACEEN"
+    },
+    {
+      "NOM_RUB": "ALAMCEN"
+    },
+    {
+      "NOM_RUB": "CIGARROS"
+    },
+    {
+      "NOM_RUB": "ALMACCE"
+    },
+    {
+      "NOM_RUB": "GENEERAL"
+    },
+    {
+      "NOM_RUB": "GEENERAL"
+    },
+    {
+      "NOM_RUB": "-ALMACEN"
+    },
+    {
+      "NOM_RUB": "GENERAL+"
+    },
+    {
+      "NOM_RUB": "KIIOSCO"
+    },
+    {
+      "NOM_RUB": "ALMACN"
+    },
+    {
+      "NOM_RUB": "ALACEN"
+    },
+    {
+      "NOM_RUB": "AMACEN"
+    },
+    {
+      "NOM_RUB": "ALAMACEN"
+    },
+    {
+      "NOM_RUB": "ALMN"
+    },
+    {
+      "NOM_RUB": "GENERAL."
+    },
+    {
+      "NOM_RUB": "ALLMACE"
+    },
+    {
+      "NOM_RUB": "ALOMACEN"
+    },
+    {
+      "NOM_RUB": "ALMACENCEN"
+    },
+    {
+      "NOM_RUB": "HELADEARA"
+    },
+    {
+      "NOM_RUB": "GANERAL"
+    },
+    {
+      "NOM_RUB": "ALMMACEN"
+    },
+    {
+      "NOM_RUB": "ALMAE"
+    },
+    {
+      "NOM_RUB": "LAMCEN"
+    },
+    {
+      "NOM_RUB": "PLAYADITO"
+    },
+    {
+      "NOM_RUB": "ENERAL"
+    },
+    {
+      "NOM_RUB": "GENERAA"
+    },
+    {
+      "NOM_RUB": "10"
+    },
+    {
+      "NOM_RUB": "CREMA"
+    },
+    {
+      "NOM_RUB": "CONDIMENTOS"
+    },
+    {
+      "NOM_RUB": "PEFUMERIA"
+    },
+    {
+      "NOM_RUB": "GENERA"
+    },
+    {
+      "NOM_RUB": "MAYORISTA"
+    }
+  ]
+}

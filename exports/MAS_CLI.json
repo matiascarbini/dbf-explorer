@@ -1,0 +1,2158 @@
+{
+  "table": "MAS_CLI",
+  "source_file": "/home/matias/DESARROLLO/TEST/ALPASO/bases/MAS_CLI.DBF",
+  "encoding": "latin1",
+  "record_count": 210,
+  "fields": [
+    {
+      "name": "COD_CLI",
+      "type": "N",
+      "length": 4,
+      "decimal_count": 0
+    },
+    {
+      "name": "NOM_CLI",
+      "type": "C",
+      "length": 30,
+      "decimal_count": 0
+    },
+    {
+      "name": "DIR_CLI",
+      "type": "C",
+      "length": 30,
+      "decimal_count": 0
+    },
+    {
+      "name": "LOC_CLI",
+      "type": "C",
+      "length": 30,
+      "decimal_count": 0
+    },
+    {
+      "name": "TEL_CLI",
+      "type": "C",
+      "length": 30,
+      "decimal_count": 0
+    },
+    {
+      "name": "CAT_CLI",
+      "type": "C",
+      "length": 11,
+      "decimal_count": 0
+    },
+    {
+      "name": "CUI_CLI",
+      "type": "C",
+      "length": 13,
+      "decimal_count": 0
+    },
+    {
+      "name": "MAI_CLI",
+      "type": "C",
+      "length": 60,
+      "decimal_count": 0
+    }
+  ],
+  "records": [
+    {
+      "COD_CLI": 1,
+      "NOM_CLI": "CONSUMIDOR FINAL",
+      "DIR_CLI": "CASILDA",
+      "LOC_CLI": "2170-CASILDA",
+      "TEL_CLI": "",
+      "CAT_CLI": "CFinal",
+      "CUI_CLI": "  -        -",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 2,
+      "NOM_CLI": "CETROGAR",
+      "DIR_CLI": "AV.25 DE MAYO 1850",
+      "LOC_CLI": "3500-RESISTENCIA CHACO",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-59284574-8",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 3,
+      "NOM_CLI": "RIBEIRO S.A.C.I.F.A E.I",
+      "DIR_CLI": "MITRE Y BS AS",
+      "LOC_CLI": "2170-CASILDA SANTA FE",
+      "TEL_CLI": "03464 426466",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-52596685-9",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 4,
+      "NOM_CLI": "DI GIOVANNI OLGA",
+      "DIR_CLI": "BUENOS AIRES 2414",
+      "LOC_CLI": "2170-CASILDA SANTA FE",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "27-11297815-7",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 5,
+      "NOM_CLI": "ELECTRONICA MEGATONE SA",
+      "DIR_CLI": "BUENOS AIRES 2469",
+      "LOC_CLI": "2170-CASILDA SANTA FE",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-54365973-4",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 6,
+      "NOM_CLI": "MIRIAN LETTO",
+      "DIR_CLI": "BS AS 2557",
+      "LOC_CLI": "2170-CASILDA SANTA FE",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "23-14737162-4",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 7,
+      "NOM_CLI": "MANCINI SERGIO ADRIAN",
+      "DIR_CLI": "BUENOS AIRES 2695",
+      "LOC_CLI": "2170-CASILDA SANTA FE",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "20-20269042-5",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 8,
+      "NOM_CLI": "CENTRO ECONOMICO DPTO CASEROS",
+      "DIR_CLI": "BS AS 2474",
+      "LOC_CLI": "2170-CASILDA SANTA FE",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-52819892-5",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 9,
+      "NOM_CLI": "ASOC MUT DEL MAGIST D STA FE",
+      "DIR_CLI": "EVA PERON 2426",
+      "LOC_CLI": "3000-SANTA FE SANTA FE",
+      "TEL_CLI": "",
+      "CAT_CLI": "Exento",
+      "CUI_CLI": "30-64953377-2",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 10,
+      "NOM_CLI": "NOVA SIEMBRA METALURGICA SRL",
+      "DIR_CLI": "MITRE 955",
+      "LOC_CLI": "2170-CASILDA SANTA FE",
+      "TEL_CLI": "428267",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-71188846-9",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 11,
+      "NOM_CLI": "BARISON GUSTAVO ARIEL",
+      "DIR_CLI": "BUENOS AIRES 2558",
+      "LOC_CLI": "2170-CASILDA SANTA FE",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "20-24325539-3",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 12,
+      "NOM_CLI": "GENTILI STELLA MARI",
+      "DIR_CLI": "SAN MARTIN 2246",
+      "LOC_CLI": "2170-CASILDA SANTA FE",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "27-11655215-4",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 13,
+      "NOM_CLI": "AGROSERVICIOS PAMPEANOS SA",
+      "DIR_CLI": "RUTA 33 KM745,5",
+      "LOC_CLI": "2170-CASILDA SANTA FE",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-68149046-5",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 14,
+      "NOM_CLI": "RADIO CASILDA SRL",
+      "DIR_CLI": "MITRE 2247",
+      "LOC_CLI": "2170-CASILDA SANTA FE",
+      "TEL_CLI": "422522",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-71505579-8",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 15,
+      "NOM_CLI": "PARDO S A",
+      "DIR_CLI": "22 Y 47 0",
+      "LOC_CLI": "2720-COLON BUENOS AIRES",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-66677491-0",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 16,
+      "NOM_CLI": "ANDREANI LOGISTICA SA",
+      "DIR_CLI": "BV COLON 3690",
+      "LOC_CLI": "2170-CASILDA SANTA FE",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-69801114-5",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 17,
+      "NOM_CLI": "SUCESION VALLE ROGELIO",
+      "DIR_CLI": "RUTA 33 KM812",
+      "LOC_CLI": "2170-CASILDA SANTA FE",
+      "TEL_CLI": "3464420201",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "20-06112494-3",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 18,
+      "NOM_CLI": "CIRCULO DE KINESIOLOG Y FISIO",
+      "DIR_CLI": "TUCUMAN 2758",
+      "LOC_CLI": "2170-CASILDA SANTA FE",
+      "TEL_CLI": "0",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-71475429-3",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 19,
+      "NOM_CLI": "ASOC CULT TEATRO DANTE",
+      "DIR_CLI": "ESPANA 1910",
+      "LOC_CLI": "2170-CASILDA SANTA FE",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-71131306-7",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 20,
+      "NOM_CLI": "VIERA GLORIA",
+      "DIR_CLI": "ZONA RURAL",
+      "LOC_CLI": "2183-AREQUITO STA. FE",
+      "TEL_CLI": "0341 155494300",
+      "CAT_CLI": "CFinal",
+      "CUI_CLI": "14-203917  -",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 21,
+      "NOM_CLI": "ASOCIACION COOP ESC N209",
+      "DIR_CLI": "MITRE 1920",
+      "LOC_CLI": "2170-CASILDA SANTA FE",
+      "TEL_CLI": "",
+      "CAT_CLI": "Exento",
+      "CUI_CLI": "30-67397194-2",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 22,
+      "NOM_CLI": "COMPA¥IA DE SERVICIOS DEL SUR",
+      "DIR_CLI": "MORENO 1845",
+      "LOC_CLI": "2170-CASILDA SANTA FE",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-70871278-3",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 23,
+      "NOM_CLI": "AC Y ASOCIADOS",
+      "DIR_CLI": "BV LISANDRO DE LA TORRE 2444",
+      "LOC_CLI": "2170-CASILDA SANTA FE",
+      "TEL_CLI": "426289",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-70891030-5",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 24,
+      "NOM_CLI": "HOSPITAL SAN CARLOS",
+      "DIR_CLI": "9 DE JULIO 2350",
+      "LOC_CLI": "2170-CASILDA SANTA FE",
+      "TEL_CLI": "422107",
+      "CAT_CLI": "Exento",
+      "CUI_CLI": "30-67403145-5",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 25,
+      "NOM_CLI": "VALENTE PUBLICITARIA S.R.L",
+      "DIR_CLI": "LAMADRID 7240",
+      "LOC_CLI": "3000-SANTA FE SANTA FE",
+      "TEL_CLI": "3424286721",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-71539685-4",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 26,
+      "NOM_CLI": "KEMERER MAXIMILIANO A",
+      "DIR_CLI": "E ZEBALLOS 1545",
+      "LOC_CLI": "2170-CASILDA SANTA FE",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "20-29528577-0",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 27,
+      "NOM_CLI": "FRANCO BOZZO Y TAMARA BOZZO SH",
+      "DIR_CLI": "E ZEBALLOS 1555",
+      "LOC_CLI": "2170-CASILDA SANTA FE",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-71160461-4",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 28,
+      "NOM_CLI": "UNIVERSIDAD NAC DE ROSARIO",
+      "DIR_CLI": "MAIPU 1065",
+      "LOC_CLI": "2000-ROSARIO SANTA FE",
+      "TEL_CLI": "",
+      "CAT_CLI": "Exento",
+      "CUI_CLI": "30-52355240-2",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 29,
+      "NOM_CLI": "ASOC.CIVIL PE¥A ROJA CASILDA",
+      "DIR_CLI": "MITRE 2057",
+      "LOC_CLI": "2170-CASILDA SANTA FE",
+      "TEL_CLI": "+5493464515173",
+      "CAT_CLI": "Exento",
+      "CUI_CLI": "30-71638222-9",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 30,
+      "NOM_CLI": "CORREO ANDREANI",
+      "DIR_CLI": "BUENOS AIRES 2439",
+      "LOC_CLI": "2170-CASILDA SANTA FE",
+      "TEL_CLI": "3464424840",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "33-69968545-9",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 31,
+      "NOM_CLI": "RODRIGUEZ EDUARDO MATIAS",
+      "DIR_CLI": "BUENOS AIRES 2598",
+      "LOC_CLI": "2170-CASILDA SANTA FE",
+      "TEL_CLI": "3464438333",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "20-30230985-0",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 32,
+      "NOM_CLI": "RAVA S.A DE CONSTRUCCIONES",
+      "DIR_CLI": "9 DE JULIO 1209",
+      "LOC_CLI": "2170-CASILDA SANTA FE",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-64077910-8",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 33,
+      "NOM_CLI": "HECTOR GOMES CASAS",
+      "DIR_CLI": "SAN MARTIN 2031",
+      "LOC_CLI": "2170-CASILDA SANTA FE",
+      "TEL_CLI": "3464 422982",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "20-06134916-3",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 34,
+      "NOM_CLI": "ESCUELA GENERAL SAN MARTIN 490",
+      "DIR_CLI": "AVELINO LOTTICCI 2294",
+      "LOC_CLI": "2170-CASILDA SANTA FE",
+      "TEL_CLI": "422282",
+      "CAT_CLI": "Exento",
+      "CUI_CLI": "30-99907903-9",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 35,
+      "NOM_CLI": "ASOC. COOP. ESC SAN MARTIN 490",
+      "DIR_CLI": "AVELINO LOTTICCI 2294",
+      "LOC_CLI": "2170-CASILDA SANTA FE",
+      "TEL_CLI": "3464422282",
+      "CAT_CLI": "Exento",
+      "CUI_CLI": "30-69565081-3",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 36,
+      "NOM_CLI": "MOLINA MAXIMILIANO RAMON",
+      "DIR_CLI": "BUENOS AIRES 2168",
+      "LOC_CLI": "2170-CASILDA SANTA FE",
+      "TEL_CLI": "3464686414",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "20-28404601-4",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 37,
+      "NOM_CLI": "MARIANA DEL GRECO",
+      "DIR_CLI": "BS.AS 2482",
+      "LOC_CLI": "2170-CASILDA SANTA FE",
+      "TEL_CLI": "3464582302",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "23-25883906-4",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 38,
+      "NOM_CLI": "BALESTRINI DIEGO GERARDO",
+      "DIR_CLI": "SAN MARTIN 2040",
+      "LOC_CLI": "2170-CASILDA SANTA FE",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "20-21620299-7",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 39,
+      "NOM_CLI": "ROLANDO CLAUDIO JORGE",
+      "DIR_CLI": "SAN MARTIN 2015",
+      "LOC_CLI": "2170-CASILDA SANTA FE",
+      "TEL_CLI": "3464686579",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "20-24859167-7",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 40,
+      "NOM_CLI": "BANDONI ARMANDO ALFREDO",
+      "DIR_CLI": "BUENOS AIRES 2301",
+      "LOC_CLI": "2170-CASILDA SANTA FE",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "23-18032005-9",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 41,
+      "NOM_CLI": "ERNESTO ORLANDONI SRL",
+      "DIR_CLI": "25 DE MAYO 352",
+      "LOC_CLI": "0000-SANFORD SANTA FE",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-71663162-8",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 42,
+      "NOM_CLI": "NESTOR BARBON",
+      "DIR_CLI": "CASADO 2331",
+      "LOC_CLI": "2170-CASILDA SANTA FE",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "20-13695063-1",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 43,
+      "NOM_CLI": "GESTAM ARGENTINA SA",
+      "DIR_CLI": "",
+      "LOC_CLI": "-VILLA MARIA CORDOBA",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-67963603-7",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 44,
+      "NOM_CLI": "MARIANA DEL GRECO",
+      "DIR_CLI": "BUENOS AIRES 2482",
+      "LOC_CLI": "2170-CASILDA SANTA FE",
+      "TEL_CLI": "3464582302",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "23-25883906-4",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 45,
+      "NOM_CLI": "AGROTORRESI SA",
+      "DIR_CLI": "RUTA 33 KM740.5",
+      "LOC_CLI": "2170-CASILDA SANTA FE",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-71142892-1",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 46,
+      "NOM_CLI": "OYAZZABAL CRISTIAN JESUS",
+      "DIR_CLI": "LA RIOJA 2725",
+      "LOC_CLI": "2170-CASILDA SANTA FE",
+      "TEL_CLI": "3464 695459",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "20-23405576-4",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 48,
+      "NOM_CLI": "Sucesion Rogelio A. Valle",
+      "DIR_CLI": "Ruta 33, km 746",
+      "LOC_CLI": "Casilda",
+      "TEL_CLI": "3464522428",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "20-06112494-3",
+      "MAI_CLI": "gerenciavalmer@dat1.net.ar"
+    },
+    {
+      "COD_CLI": 49,
+      "NOM_CLI": "E GHERARDI HIJOS SA",
+      "DIR_CLI": "RUTA 33 KM741,3",
+      "LOC_CLI": "CASILDA",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-50103797-0",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 47,
+      "NOM_CLI": "bedetti fernando",
+      "DIR_CLI": "san martin 2116",
+      "LOC_CLI": "casilda",
+      "TEL_CLI": "",
+      "CAT_CLI": "CFinal",
+      "CUI_CLI": "",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 50,
+      "NOM_CLI": "BAHISA SRL",
+      "DIR_CLI": "DONADO 4530",
+      "LOC_CLI": "CABA",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-67668348-4",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 51,
+      "NOM_CLI": "consulado del paraguay",
+      "DIR_CLI": "san luis 1370",
+      "LOC_CLI": "rosario",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-70946403-1",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 52,
+      "NOM_CLI": "ROBERTO MARCONI",
+      "DIR_CLI": "BS AS 2302",
+      "LOC_CLI": "CASILDA",
+      "TEL_CLI": "423214",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "20-12619548-7",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 53,
+      "NOM_CLI": "FLAVIA GRIFFA",
+      "DIR_CLI": "LISANDRO DE LA TORRE 2421",
+      "LOC_CLI": "CASILDA",
+      "TEL_CLI": "428037",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "27-20269429-8",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 54,
+      "NOM_CLI": "LAVERNI GRACIELA ESTER",
+      "DIR_CLI": "SAN MARTIN 2040",
+      "LOC_CLI": "CASILDA",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "27-22129938-3",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 55,
+      "NOM_CLI": "Pemam Eduardo",
+      "DIR_CLI": "Italia 805",
+      "LOC_CLI": "Venado Tuerto 2600",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "20-17956241-4",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 56,
+      "NOM_CLI": "GOMEZ ALBERTO",
+      "DIR_CLI": "BS AS 2356",
+      "LOC_CLI": "CASILDA",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "20-06613476-9",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 57,
+      "NOM_CLI": "ADMINISTRADORA SAN JUAN SA",
+      "DIR_CLI": "San Lorenzo 1440",
+      "LOC_CLI": "ROSARIO",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-70774398-7",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 58,
+      "NOM_CLI": "PEÑA XENEIZE CASILDA",
+      "DIR_CLI": "1 DE MAYO 3525",
+      "LOC_CLI": "CASILDA",
+      "TEL_CLI": "",
+      "CAT_CLI": "Exento",
+      "CUI_CLI": "30-71666359-7",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 59,
+      "NOM_CLI": "Bahisa SRL",
+      "DIR_CLI": "Donado 4530",
+      "LOC_CLI": "Buenos Aires",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-67668348-4",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 60,
+      "NOM_CLI": "Correo oficial de la RepArg SA",
+      "DIR_CLI": "lisandro de la torre 2379",
+      "LOC_CLI": "Casilda",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-70857483-6",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 61,
+      "NOM_CLI": "esteban gomez casas",
+      "DIR_CLI": "san martin 2031",
+      "LOC_CLI": "casilda",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "20-26124605-9",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 62,
+      "NOM_CLI": "gunegondi alberto federico",
+      "DIR_CLI": "belgrano 666",
+      "LOC_CLI": "pueblo muñoz",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "20-13301233-9",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 63,
+      "NOM_CLI": "Dyeser SRL",
+      "DIR_CLI": "LAMADRID 301",
+      "LOC_CLI": "2520",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-71111328-9",
+      "MAI_CLI": "LAS ROSAS - SANTA FE"
+    },
+    {
+      "COD_CLI": 64,
+      "NOM_CLI": "CONSUMIDOR FINAL",
+      "DIR_CLI": "CASILDA",
+      "LOC_CLI": "2170-CASILDA",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "27-11655215-4",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 65,
+      "NOM_CLI": "GENTILI STELLA MARI",
+      "DIR_CLI": "",
+      "LOC_CLI": "CASILDA",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "27-11655215-4",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 66,
+      "NOM_CLI": "GABRIEL GIMENEZ",
+      "DIR_CLI": "CASILDA",
+      "LOC_CLI": "2170-CASILDA",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "20-24859005-0",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 67,
+      "NOM_CLI": "HERNAN Y VALERIA MONTES",
+      "DIR_CLI": "BV COLON 1858",
+      "LOC_CLI": "CASILDA",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-70956955-0",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 68,
+      "NOM_CLI": "JAVIER RODRIGO SIÑERIZ",
+      "DIR_CLI": "OV.LAGOS 1625",
+      "LOC_CLI": "",
+      "TEL_CLI": "1154969856",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "20-21690750-8",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 69,
+      "NOM_CLI": "CALABRETTA EMILIA",
+      "DIR_CLI": "MITRE 2358",
+      "LOC_CLI": "           CASILDA",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "23-13093552-4",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 70,
+      "NOM_CLI": "LAGUZZI JAVIER",
+      "DIR_CLI": "ESPAÑA 3392",
+      "LOC_CLI": "    CASILDA",
+      "TEL_CLI": "3462541150",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "23-25293337-9",
+      "MAI_CLI": "JAVIERLAGUZZI@GMAIL.COM"
+    },
+    {
+      "COD_CLI": 71,
+      "NOM_CLI": "ALCALA SERVICIO SRL",
+      "DIR_CLI": "LA PAZ 284",
+      "LOC_CLI": "SAN LORENZO",
+      "TEL_CLI": "341189271",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-71055305-6",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 72,
+      "NOM_CLI": "FUNDACION SI",
+      "DIR_CLI": "CASILDA",
+      "LOC_CLI": "2170-CASILDA",
+      "TEL_CLI": "",
+      "CAT_CLI": "Exento",
+      "CUI_CLI": "30-71250682-9",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 73,
+      "NOM_CLI": "Gerardo Germondari",
+      "DIR_CLI": "",
+      "LOC_CLI": "",
+      "TEL_CLI": "3464684208",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "20-11655054-8",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 74,
+      "NOM_CLI": "ASOC. COOP. FCV.Y .ESC AGRO",
+      "DIR_CLI": "CASILDA",
+      "LOC_CLI": "2170-CASILDA",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-67395464-9",
+      "MAI_CLI": "JUANIMUTTI@HOTMAIL.COM"
+    },
+    {
+      "COD_CLI": 75,
+      "NOM_CLI": "ASOC. COOP. FAC. CS. Y. ESC. A",
+      "DIR_CLI": "CASILDA",
+      "LOC_CLI": "2170-CASILDA",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-67395464-9",
+      "MAI_CLI": "JUANIMUTTI@HOTMAIL.COM"
+    },
+    {
+      "COD_CLI": 76,
+      "NOM_CLI": "ASOC. COOP.FAC.CS. Y ESC. AGRO",
+      "DIR_CLI": "SPAMGEMBERG Y BV. COLON",
+      "LOC_CLI": "CASILDA",
+      "TEL_CLI": "3407432649",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-67395464-9",
+      "MAI_CLI": "JUANIMUTTI@HOTMAIL.COM"
+    },
+    {
+      "COD_CLI": 77,
+      "NOM_CLI": "ROLDAN GASTON Y MARIANO",
+      "DIR_CLI": "BV. COLON 1308",
+      "LOC_CLI": "",
+      "TEL_CLI": "3464420380",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-69566213-7",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 78,
+      "NOM_CLI": "PAGANO Y KOPAITICH SRL",
+      "DIR_CLI": "",
+      "LOC_CLI": "",
+      "TEL_CLI": "3464687326",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-67398951-5",
+      "MAI_CLI": "VIVIAP71@HOTMAIL.COM"
+    },
+    {
+      "COD_CLI": 79,
+      "NOM_CLI": "DYLAN AGUIRRE",
+      "DIR_CLI": "",
+      "LOC_CLI": "",
+      "TEL_CLI": "3464690502",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "20-41730117-9",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 80,
+      "NOM_CLI": "LEONELA SOLEDAD PALLA",
+      "DIR_CLI": "LISANDRO DE LA TORRE 2526",
+      "LOC_CLI": "CASILDA",
+      "TEL_CLI": "3464588693",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "27-35291581-0",
+      "MAI_CLI": "LEONELAPALLA@GMAIL.COM"
+    },
+    {
+      "COD_CLI": 81,
+      "NOM_CLI": "VICO HERMANOS SRL",
+      "DIR_CLI": "9 de julio 1525",
+      "LOC_CLI": "",
+      "TEL_CLI": "3464441338",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-61997451-0",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 82,
+      "NOM_CLI": "MAXIMINO Y CASTELLI SRL",
+      "DIR_CLI": "OV. LAGOS 1172",
+      "LOC_CLI": "CASILDA",
+      "TEL_CLI": "423212",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-70995550-7",
+      "MAI_CLI": "CASILDANEUMATICOS2@GMAIL.COM"
+    },
+    {
+      "COD_CLI": 83,
+      "NOM_CLI": "IGNACIO JORGE SIMONIT",
+      "DIR_CLI": "PESCIO 2326",
+      "LOC_CLI": "CASILDA",
+      "TEL_CLI": "3464696841",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "23-30741900-9",
+      "MAI_CLI": "GLORIACARDOZO84GC@GMAIL.COM"
+    },
+    {
+      "COD_CLI": 84,
+      "NOM_CLI": "UNIVERSIDAD NACIONAL DE ROSARO",
+      "DIR_CLI": "MAIPU 1665",
+      "LOC_CLI": "ROSARIO",
+      "TEL_CLI": "",
+      "CAT_CLI": "Exento",
+      "CUI_CLI": "30-52355240-2",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 85,
+      "NOM_CLI": "MARCELA CINELLO",
+      "DIR_CLI": "SARMIENTO 1899",
+      "LOC_CLI": "CASILDA",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "27-16483888-4",
+      "MAI_CLI": "MARCELACINELLO949@GMAIL.COM"
+    },
+    {
+      "COD_CLI": 87,
+      "NOM_CLI": "QUINTO FEDRE S.A",
+      "DIR_CLI": "OV LAGOS 2355",
+      "LOC_CLI": "CASILDA",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-71576240-0",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 88,
+      "NOM_CLI": "RAUL A RAIMONDA Y CIA SRL",
+      "DIR_CLI": " CATAMARCA 1855",
+      "LOC_CLI": "",
+      "TEL_CLI": "422021",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-67399718-6",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 89,
+      "NOM_CLI": "PEREZ FEDERICO ANDRES",
+      "DIR_CLI": "SARMIENTO 2581",
+      "LOC_CLI": "CASILDA",
+      "TEL_CLI": "3464509373",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "20-38371806-7",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 90,
+      "NOM_CLI": "FRANCO LUIS JESUS TERENZI",
+      "DIR_CLI": "RUTA 33 KM 745",
+      "LOC_CLI": "CASILDA",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "20-40617266-0",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 91,
+      "NOM_CLI": "SEBASTIAN MARTIN",
+      "DIR_CLI": "CASEROS 3136",
+      "LOC_CLI": "BUENOS AIRES",
+      "TEL_CLI": "1162923852",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-71044061-8",
+      "MAI_CLI": "SEBASTIAN.AR.MARTIN@GMAIL.COM"
+    },
+    {
+      "COD_CLI": 92,
+      "NOM_CLI": "DEFCO SEGURIDAD SA",
+      "DIR_CLI": "",
+      "LOC_CLI": "",
+      "TEL_CLI": "1165389901",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-71044061-8",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 93,
+      "NOM_CLI": "GIACONE STELLA",
+      "DIR_CLI": "",
+      "LOC_CLI": "",
+      "TEL_CLI": "15540467",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "27-16337361-6",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 94,
+      "NOM_CLI": "CASILDA COMBUSTIBLE SRL",
+      "DIR_CLI": "",
+      "LOC_CLI": "CASILDA",
+      "TEL_CLI": "3464542343",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-71567526-5",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 95,
+      "NOM_CLI": "FRANCO DELL ARCIPRETE",
+      "DIR_CLI": "",
+      "LOC_CLI": "FUENTES",
+      "TEL_CLI": "3464584443",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "20-32185760-5",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 96,
+      "NOM_CLI": "CORREDORES VIALE S.A.",
+      "DIR_CLI": "Av. Roque Saenz Peña 777",
+      "LOC_CLI": "CABA",
+      "TEL_CLI": "3404632615",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-71580481-2",
+      "MAI_CLI": "federico.bertello@cvsa.com.ar"
+    },
+    {
+      "COD_CLI": 97,
+      "NOM_CLI": "RICARDO VENTURINO",
+      "DIR_CLI": "",
+      "LOC_CLI": "CASILDA",
+      "TEL_CLI": "3464440328",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-69831889-5",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 98,
+      "NOM_CLI": "CINELLO MARCELA",
+      "DIR_CLI": "SARMIENTO 1899",
+      "LOC_CLI": "CASILDA",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "27-16483888-4",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 99,
+      "NOM_CLI": "FUNDACION DE LA UNR",
+      "DIR_CLI": "",
+      "LOC_CLI": "ROSARIO",
+      "TEL_CLI": "",
+      "CAT_CLI": "Exento",
+      "CUI_CLI": "30-65219005-3",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 100,
+      "NOM_CLI": "TORTUL AGROPECUARIA SRL",
+      "DIR_CLI": "OROÑO 743",
+      "LOC_CLI": "FUENTES",
+      "TEL_CLI": "3464508295",
+      "CAT_CLI": "CFinal",
+      "CUI_CLI": "30-71036331-1",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 101,
+      "NOM_CLI": "BIGLIA FERNANDO",
+      "DIR_CLI": "ZONA RURAL CASILDA",
+      "LOC_CLI": "CASILDA",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "20-36483996-1",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 102,
+      "NOM_CLI": "FUNDACION SI ARGENTINA",
+      "DIR_CLI": "CARRANZA ANGEL 1962",
+      "LOC_CLI": "CAPITAL FEDERAL",
+      "TEL_CLI": "",
+      "CAT_CLI": "Exento",
+      "CUI_CLI": "30-71250682-9",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 103,
+      "NOM_CLI": "LEANDRO MIGUEL ANDREANI",
+      "DIR_CLI": "",
+      "LOC_CLI": "",
+      "TEL_CLI": "3464559740",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "20-29216352-6",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 104,
+      "NOM_CLI": "NUÑEZ NICOLAS",
+      "DIR_CLI": "OV LAGOS 1111",
+      "LOC_CLI": "CASILDA",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "20-32209872-4",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 105,
+      "NOM_CLI": "NIZZO SRL",
+      "DIR_CLI": "ROCA 1045",
+      "LOC_CLI": "CASILDA",
+      "TEL_CLI": "3464422401",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-71229433-3",
+      "MAI_CLI": "RECAPADOS@HOTMAIL.COM"
+    },
+    {
+      "COD_CLI": 106,
+      "NOM_CLI": "TOROSSI MIGUEL ANGEL",
+      "DIR_CLI": "TUCUMAN 1805",
+      "LOC_CLI": "CASILDA",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "20-08375299-9",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 107,
+      "NOM_CLI": "ZAPATA CLAUDIO",
+      "DIR_CLI": "RIOJA 1567",
+      "LOC_CLI": "CASILDA",
+      "TEL_CLI": "3464597414",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "20-22787447-4",
+      "MAI_CLI": "CLAUDIOZAPATA039@GMAIL.COM"
+    },
+    {
+      "COD_CLI": 108,
+      "NOM_CLI": "SWIRIDO IAN",
+      "DIR_CLI": "",
+      "LOC_CLI": "CASILDA",
+      "TEL_CLI": "3464414083",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "20-37712484-8",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 109,
+      "NOM_CLI": "GRIFFA ELBIO",
+      "DIR_CLI": "H. YRIGOYEN 1801",
+      "LOC_CLI": "",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "20-06558722-0",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 110,
+      "NOM_CLI": "OLEOHIDRAULICA PIVETTA S.R.L",
+      "DIR_CLI": "",
+      "LOC_CLI": "CASILDA",
+      "TEL_CLI": "3464625195",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-71081977-3",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 111,
+      "NOM_CLI": "THD ARGENTINA S.A",
+      "DIR_CLI": "",
+      "LOC_CLI": "CAPITAL FEDERAL",
+      "TEL_CLI": "1157712956",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-71247565-6",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 112,
+      "NOM_CLI": "DOMISSI HERMANOS SRL",
+      "DIR_CLI": "",
+      "LOC_CLI": "CASILDA",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-59423838-5",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 113,
+      "NOM_CLI": "UNIVERSIDAD NACIONAL DE ROSARO",
+      "DIR_CLI": "MAIPU 1065",
+      "LOC_CLI": "ROSARIO",
+      "TEL_CLI": "",
+      "CAT_CLI": "Exento",
+      "CUI_CLI": "30-52355240-2",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 114,
+      "NOM_CLI": "JOSE SALVADOR GENNA",
+      "DIR_CLI": "",
+      "LOC_CLI": "CASILDA",
+      "TEL_CLI": "3464509556",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "20-14848677-9",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 115,
+      "NOM_CLI": "BORDO ARQUITECTURA SRL",
+      "DIR_CLI": "",
+      "LOC_CLI": "ROSARIO",
+      "TEL_CLI": "3414475805",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-70152665-8",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 116,
+      "NOM_CLI": "MIGUEL MORRESI",
+      "DIR_CLI": "RIVADAVIA 527",
+      "LOC_CLI": "SANFORD",
+      "TEL_CLI": "3464563818",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "20-25001388-5",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 117,
+      "NOM_CLI": "GRIFFA J LUIS",
+      "DIR_CLI": "ROCA 1565",
+      "LOC_CLI": "CASILDA",
+      "TEL_CLI": "3464695900",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "23-20141968-9",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 118,
+      "NOM_CLI": "PERFOMALETALES CASILDA SRL",
+      "DIR_CLI": "WASHIGTON 1050",
+      "LOC_CLI": "CASILDA",
+      "TEL_CLI": "3464422052",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-61241503-6",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 119,
+      "NOM_CLI": "YOMEL S.A.",
+      "DIR_CLI": "",
+      "LOC_CLI": "9 DE JULIO",
+      "TEL_CLI": "2317504053",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-56132500-2",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 120,
+      "NOM_CLI": "BASCULAS MAGNINO S.R.L.",
+      "DIR_CLI": "",
+      "LOC_CLI": "CASILDA",
+      "TEL_CLI": "3464423561",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-70901540-7",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 121,
+      "NOM_CLI": "DANIEL GONZALEZ SA",
+      "DIR_CLI": "ZEBALLOS 1757",
+      "LOC_CLI": "ROSARIO",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-57323789-3",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 122,
+      "NOM_CLI": "AUTOSUR S.A",
+      "DIR_CLI": "OV LAGOS Y BOLIVAR",
+      "LOC_CLI": "CASILDA",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-63199251-6",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 123,
+      "NOM_CLI": "JORGE ARIEL AYALA",
+      "DIR_CLI": "PUBLICA 100 VILLA ELOISA",
+      "LOC_CLI": "",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "20-25079950-1",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 124,
+      "NOM_CLI": "GRACIELA MARTA PICCA",
+      "DIR_CLI": "RUTA 33 KM 745",
+      "LOC_CLI": "CASILDA",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "27-16640981-6",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 125,
+      "NOM_CLI": "BAINOTTI MARIA DELIA",
+      "DIR_CLI": "MONTEVIDEO 347",
+      "LOC_CLI": "ROSARIO",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "27-16536294-8",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 126,
+      "NOM_CLI": "PABLO CADIBONI",
+      "DIR_CLI": "BOLIVAR 2354",
+      "LOC_CLI": "CASILDA",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "20-34466773-0",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 127,
+      "NOM_CLI": "JUAREZ MARIA LAURA",
+      "DIR_CLI": "",
+      "LOC_CLI": "CASILDA",
+      "TEL_CLI": "3464586639",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "27-26639694-0",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 128,
+      "NOM_CLI": "ASOC. COOP. FAC CS VETER",
+      "DIR_CLI": "",
+      "LOC_CLI": "",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-67395464-9",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 129,
+      "NOM_CLI": "FRANCISCHETTI RICARDO OSCAR",
+      "DIR_CLI": "",
+      "LOC_CLI": "",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "20-06183594-7",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 130,
+      "NOM_CLI": "Universidad Nacional Nordeste",
+      "DIR_CLI": "25 de mayo 868",
+      "LOC_CLI": "Corrientes",
+      "TEL_CLI": "3794-937409",
+      "CAT_CLI": "Exento",
+      "CUI_CLI": "30-99900421-7",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 131,
+      "NOM_CLI": "BIOTRONIK ARGETINA S.R.L",
+      "DIR_CLI": "JUAN CARLOS CRUZ 1850",
+      "LOC_CLI": "",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-71501383-1",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 132,
+      "NOM_CLI": "RASCHINI DANIEL ESTEBAN",
+      "DIR_CLI": "CORTADA SAN AGUSTIN 766",
+      "LOC_CLI": "PUJATO",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "20-22259145-8",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 133,
+      "NOM_CLI": "ALFAGRO SA",
+      "DIR_CLI": "RECONQUISTA 341",
+      "LOC_CLI": "FUENTES",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-70861503-6",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 134,
+      "NOM_CLI": "ROSATO ALCIDES",
+      "DIR_CLI": "",
+      "LOC_CLI": "CASILDA",
+      "TEL_CLI": "3464680164",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "20-13479846-8",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 135,
+      "NOM_CLI": "NORVIAL",
+      "DIR_CLI": "RUTA NAC 12 KM447",
+      "LOC_CLI": "SAN BENITO",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-71061034-3",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 136,
+      "NOM_CLI": "GUNEGONDI ALBERTO FEDERICO",
+      "DIR_CLI": "",
+      "LOC_CLI": "PUEBLO MUÑOZ",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "20-13301233-9",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 137,
+      "NOM_CLI": "CLUB ATLETICO CHABAS",
+      "DIR_CLI": "SAN MARTIN 1650",
+      "LOC_CLI": "CHABAS",
+      "TEL_CLI": "",
+      "CAT_CLI": "Exento",
+      "CUI_CLI": "30-71172247-1",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 138,
+      "NOM_CLI": "MULTIMARCAS SAN JOSE",
+      "DIR_CLI": "",
+      "LOC_CLI": "SAN JOSE DE LA ESQUINA",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-70974403-4",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 139,
+      "NOM_CLI": "DIEGO GARAY",
+      "DIR_CLI": "",
+      "LOC_CLI": "CASILDA",
+      "TEL_CLI": "3464699197",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "20-32015856-8",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 140,
+      "NOM_CLI": "MARTINELLI Y ASOCIADOS SRL",
+      "DIR_CLI": "",
+      "LOC_CLI": "ROSARIO",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-70145458-4",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 141,
+      "NOM_CLI": "LA MANTOVANA SA",
+      "DIR_CLI": "CONSTITUCION 4268",
+      "LOC_CLI": "CABA",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-69605181-6",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 142,
+      "NOM_CLI": "PETRICEVICH CLAUDIO",
+      "DIR_CLI": "GRANDOLI 148",
+      "LOC_CLI": "FUENTES",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "20-16430285-8",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 143,
+      "NOM_CLI": "Lyc agropecuaria SRL",
+      "DIR_CLI": "Marconi 581",
+      "LOC_CLI": "Cañada de Gomez",
+      "TEL_CLI": "3471544698",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-71805494-6",
+      "MAI_CLI": "lyc.agropecuaria@gmail.com"
+    },
+    {
+      "COD_CLI": 144,
+      "NOM_CLI": "SIGNES WALTER",
+      "DIR_CLI": "BELGRANO 1296",
+      "LOC_CLI": "CASILDA",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "23-28153249-9",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 145,
+      "NOM_CLI": "GEROMINI JESICA YANINA",
+      "DIR_CLI": "",
+      "LOC_CLI": "CASILDA",
+      "TEL_CLI": "3464444352",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "27-26700103-6",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 146,
+      "NOM_CLI": "MIGUEL ANGEL GRABICH",
+      "DIR_CLI": "",
+      "LOC_CLI": "CASILDA",
+      "TEL_CLI": "346454699",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "20-17099322-6",
+      "MAI_CLI": "MGRABICH@E-CENTURY.COM.AR"
+    },
+    {
+      "COD_CLI": 147,
+      "NOM_CLI": "BASSO FABIAN",
+      "DIR_CLI": "",
+      "LOC_CLI": "",
+      "TEL_CLI": "346415685231",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "20-20269419-6",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 148,
+      "NOM_CLI": "TOMAS HELGUERA",
+      "DIR_CLI": "PEDERNERA3240",
+      "LOC_CLI": "CASILDA",
+      "TEL_CLI": "3464506542",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "20-37245559-5",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 149,
+      "NOM_CLI": "PRIMORDIAL SA",
+      "DIR_CLI": "BUENOS AIRES 1785",
+      "LOC_CLI": "CASILDA",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "33-67398890-9",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 150,
+      "NOM_CLI": "torossi miguel",
+      "DIR_CLI": "tucuman 1805",
+      "LOC_CLI": "casilda",
+      "TEL_CLI": "3464680473",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "20-08375299-9",
+      "MAI_CLI": "miguelatoro65@gmail.com"
+    },
+    {
+      "COD_CLI": 151,
+      "NOM_CLI": "INDUSTRIA RULY SRL",
+      "DIR_CLI": "",
+      "LOC_CLI": "CASILDA",
+      "TEL_CLI": "3464449276",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-70993634-0",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 152,
+      "NOM_CLI": "CAMBORSANO JAVIER MARCELO",
+      "DIR_CLI": "",
+      "LOC_CLI": "SAN JOSE",
+      "TEL_CLI": "3416401840",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "20-24558989-2",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 153,
+      "NOM_CLI": "BRUERA CARLOS",
+      "DIR_CLI": "BUENOS AIRES 624",
+      "LOC_CLI": "MONTES DE OCA",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 154,
+      "NOM_CLI": "BRUERA CARLOS",
+      "DIR_CLI": "BUENOS AIRES 624",
+      "LOC_CLI": "MONTES DE OCA",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "20-17882570-5",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 155,
+      "NOM_CLI": "SAN CALLETANO",
+      "DIR_CLI": "MITRE 1818",
+      "LOC_CLI": "CASILDA",
+      "TEL_CLI": "",
+      "CAT_CLI": "Exento",
+      "CUI_CLI": "30-69563962-3",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 156,
+      "NOM_CLI": "HERNANDEZ HERNAN",
+      "DIR_CLI": "BV VILLADA 1362",
+      "LOC_CLI": "CASILDA",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "23-23993507-9",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 157,
+      "NOM_CLI": "DELL ARCIPRETE FRANCO",
+      "DIR_CLI": "LIBERTAD 398",
+      "LOC_CLI": "FUENTES",
+      "TEL_CLI": "03464584443",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "20-32185760-5",
+      "MAI_CLI": "ARCHI-2686@HOTMAIL.COM"
+    },
+    {
+      "COD_CLI": 158,
+      "NOM_CLI": "BASSO FABIAN",
+      "DIR_CLI": "BOLIVAR 2036",
+      "LOC_CLI": "CASILDA",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "20-20269419-6",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 159,
+      "NOM_CLI": "ADRIAN NOVELLO",
+      "DIR_CLI": "NUESTRA SEÑORA DEL ROSARIO 679",
+      "LOC_CLI": "LOS MOLINOS",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "20-22787465-2",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 160,
+      "NOM_CLI": "CONISAC SA",
+      "DIR_CLI": "ZEBALLOS 1911",
+      "LOC_CLI": "CASILDA",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-71425797-4",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 161,
+      "NOM_CLI": "COPIMEX CACISA",
+      "DIR_CLI": "AVENIDA SUCRE 2520",
+      "LOC_CLI": "BECCAR",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-52980059-9",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 162,
+      "NOM_CLI": "EXUVIA AGRO SRL",
+      "DIR_CLI": "LAS HERAS 2096",
+      "LOC_CLI": "CASILDA",
+      "TEL_CLI": "3464 539069",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-71793195-1",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 163,
+      "NOM_CLI": "JUAREZ MARIA LAURA",
+      "DIR_CLI": "SAN LORENZO 1555",
+      "LOC_CLI": "CASILDA",
+      "TEL_CLI": "3464586639",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "27-26639694-0",
+      "MAI_CLI": "MLAURAJ@JUVENTUDTRANSPORTE.COM.AR"
+    },
+    {
+      "COD_CLI": 164,
+      "NOM_CLI": "RUBEN CONRADO MOYANO",
+      "DIR_CLI": "J.B JUSTO 193",
+      "LOC_CLI": "VENADO TURTO",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "20-07644891-5",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 165,
+      "NOM_CLI": "CENTRO EV. SAN CAYETANO",
+      "DIR_CLI": "MITRE 2118",
+      "LOC_CLI": "CASILDA",
+      "TEL_CLI": "",
+      "CAT_CLI": "Exento",
+      "CUI_CLI": "30-69563962-3",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 166,
+      "NOM_CLI": "RMZ DESARROLLOS S.A.S",
+      "DIR_CLI": "PUEYRREDON 180",
+      "LOC_CLI": "ROSARIO",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-71696444-9",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 167,
+      "NOM_CLI": "EMILIANI SERGIO",
+      "DIR_CLI": "MITRE 1455",
+      "LOC_CLI": "CASILDA",
+      "TEL_CLI": "3464552620",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "20-20142826-3",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 168,
+      "NOM_CLI": "BRUERA CARLOS",
+      "DIR_CLI": "BUENOS AIRES 624",
+      "LOC_CLI": "MONTES DE OCA",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "20-17882570-5",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 169,
+      "NOM_CLI": "CUCCI ADRIAN",
+      "DIR_CLI": "ARGENTINO 4233",
+      "LOC_CLI": "CASILDA",
+      "TEL_CLI": "3464500332",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "23-24620949-9",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 170,
+      "NOM_CLI": "FERNANDEZ RODRIGO",
+      "DIR_CLI": "PESCIO 2245",
+      "LOC_CLI": "CASILDA",
+      "TEL_CLI": "3464680212",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "20-33129568-0",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 171,
+      "NOM_CLI": "GIORGI SEBASTIAN",
+      "DIR_CLI": "",
+      "LOC_CLI": "",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "20-29008841-1",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 172,
+      "NOM_CLI": "ULTRA PACK",
+      "DIR_CLI": "VELEZ SARFIELT 2135",
+      "LOC_CLI": "CASILDA",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-71426434-2",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 173,
+      "NOM_CLI": "ALCIDES EDUARDO  MUÑOZ",
+      "DIR_CLI": "CORDOBA 58 BIS",
+      "LOC_CLI": "FIRMAT",
+      "TEL_CLI": "3465407144",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "20-10372518-7",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 174,
+      "NOM_CLI": "GABRIEL GIMENEZ",
+      "DIR_CLI": "1 DE MAYO 2346",
+      "LOC_CLI": "CASILDA",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "20-24859005-0",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 175,
+      "NOM_CLI": "PROAGRO",
+      "DIR_CLI": "MONTEVIDEO 5757",
+      "LOC_CLI": "ROSARIO",
+      "TEL_CLI": "3444627145",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-55483333-7",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 176,
+      "NOM_CLI": "MAXIMILIANO GERMONDARI",
+      "DIR_CLI": "CASADO 2445",
+      "LOC_CLI": "CASILDA",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "24-30741728-2",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 177,
+      "NOM_CLI": "IExA SAS",
+      "DIR_CLI": "SARMIENTO 463",
+      "LOC_CLI": "LOS SURGENTES",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-71823516-9",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 178,
+      "NOM_CLI": "ELECTOMONTAJES DEL LITORAL",
+      "DIR_CLI": "FRAY LUIS BELTRAN 4379",
+      "LOC_CLI": "SANTA FE",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-71469628-5",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 179,
+      "NOM_CLI": "ANDRES LONGARINI",
+      "DIR_CLI": "BELGRANO 133",
+      "LOC_CLI": "ARNOLD",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "20-24081544-4",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 180,
+      "NOM_CLI": "PETRICEVICH MARTIN",
+      "DIR_CLI": "GUEMES 595",
+      "LOC_CLI": "FUENTES",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "20-29626374-6",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 181,
+      "NOM_CLI": "GUSTAVO Y GERMAN FARRONI SA",
+      "DIR_CLI": "COLON 1243",
+      "LOC_CLI": "PERGAMINO",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-61363843-8",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 182,
+      "NOM_CLI": "VMV INGENIERIA",
+      "DIR_CLI": "REMEDIOS DE ESCALADA 328",
+      "LOC_CLI": "RAFAELA",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-71759351-7",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 183,
+      "NOM_CLI": "LUCIANO CERI",
+      "DIR_CLI": "BV COLON 1810",
+      "LOC_CLI": "CASILDA",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "20-25852407-2",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 184,
+      "NOM_CLI": "CASILDA DIGITAL SA",
+      "DIR_CLI": "SAN LORENZO 1968",
+      "LOC_CLI": "CASILDA",
+      "TEL_CLI": "341670441",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-71149112-7",
+      "MAI_CLI": "EDGARDO@SOMOSFLUX.COM"
+    },
+    {
+      "COD_CLI": 185,
+      "NOM_CLI": "BULLERI MARTIN",
+      "DIR_CLI": "17 DE AGOSTO 110",
+      "LOC_CLI": "CORONEL ARNOLD",
+      "TEL_CLI": "3416855908",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "24-29450969-7",
+      "MAI_CLI": "MARTINLEONARDOBULLERI@GMAIL,COM"
+    },
+    {
+      "COD_CLI": 186,
+      "NOM_CLI": "MANA LAUTARO",
+      "DIR_CLI": "WASHIGTON 1562",
+      "LOC_CLI": "CASILDA",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "20-40556282-1",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 187,
+      "NOM_CLI": "DINAMIC INDUSTRIAL",
+      "DIR_CLI": "BV COLON 1408",
+      "LOC_CLI": "CASILDA",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-71775973-3",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 188,
+      "NOM_CLI": "VITALI RENE",
+      "DIR_CLI": "RODRIGUEZ 1139",
+      "LOC_CLI": "PUJATO",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "20-11800663-2",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 189,
+      "NOM_CLI": "PLEGAMAX",
+      "DIR_CLI": "AREA INDUSTRIAL",
+      "LOC_CLI": "CASILDA",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-71788055-9",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 190,
+      "NOM_CLI": "SUCECION ZAMPA LEONILDA",
+      "DIR_CLI": "CORONEL ARNOLD",
+      "LOC_CLI": "",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "27-04827887-1",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 191,
+      "NOM_CLI": "GASTALDI CEREALES",
+      "DIR_CLI": "MORENO 1855",
+      "LOC_CLI": "CASILDA",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-64032201-9",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 192,
+      "NOM_CLI": "CASA MISERICORDIA",
+      "DIR_CLI": "MITRE 720",
+      "LOC_CLI": "CASILDA",
+      "TEL_CLI": "3464539973",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-71768422-9",
+      "MAI_CLI": "CMISERICORDIA@GMAIL.COM"
+    },
+    {
+      "COD_CLI": 193,
+      "NOM_CLI": "RECURSOS ORGANICOS SRL",
+      "DIR_CLI": "CASADO 1654",
+      "LOC_CLI": "CASILDA",
+      "TEL_CLI": "34476628146",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "33-71058024-9",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 194,
+      "NOM_CLI": "FOSSAROLI DARIEN",
+      "DIR_CLI": "IRIONDO 1156",
+      "LOC_CLI": "PUJATO",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "20-35909662-4",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 195,
+      "NOM_CLI": "CASILDA GNC",
+      "DIR_CLI": "BV COLON 1842",
+      "LOC_CLI": "CASILDA",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-70892037-8",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 196,
+      "NOM_CLI": "TERRA VERDE AGROINSUMOS S.A",
+      "DIR_CLI": "AV. VACCAREZZA304",
+      "LOC_CLI": "ALBERTI",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-71544287-2",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 197,
+      "NOM_CLI": "PLANTUM S.A",
+      "DIR_CLI": "San luis 279",
+      "LOC_CLI": "Villa constitucion",
+      "TEL_CLI": "3400445956",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-71583636-6",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 198,
+      "NOM_CLI": "RAFAELA ALIMENTOS SA",
+      "DIR_CLI": "RUTA 33 KM 744",
+      "LOC_CLI": "CASILDA",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "33-50052990-9",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 199,
+      "NOM_CLI": "MARASCO LAURA",
+      "DIR_CLI": "BUENOS AIRES 2660",
+      "LOC_CLI": "CASILDA",
+      "TEL_CLI": "3464687992",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "27-14858934-3",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 200,
+      "NOM_CLI": "GABRIEL GASTALDI",
+      "DIR_CLI": "MORENO 1845",
+      "LOC_CLI": "CASILDA",
+      "TEL_CLI": "3464623643",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "20-16628536-5",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 201,
+      "NOM_CLI": "UNIVERSIDAD NACIONAL ROSARIO",
+      "DIR_CLI": "Maipu 1065",
+      "LOC_CLI": "",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-52355240-2",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 202,
+      "NOM_CLI": "leonardo ortolani",
+      "DIR_CLI": "masiel 126",
+      "LOC_CLI": "bombal",
+      "TEL_CLI": "3465658400",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "23-30013218-9",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 203,
+      "NOM_CLI": "FRANCO TERENZI",
+      "DIR_CLI": "RUTA 33 KM 745",
+      "LOC_CLI": "CASILDA",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "20-40617266-6",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 204,
+      "NOM_CLI": "Facultad de ciencias veterina",
+      "DIR_CLI": "Ovidio Lagos y ruta 33",
+      "LOC_CLI": "Casilda",
+      "TEL_CLI": "3414201200",
+      "CAT_CLI": "Exento",
+      "CUI_CLI": "30-52355240-2",
+      "MAI_CLI": "facultadcienciasveterinarias@fcv.unr.edu.ar"
+    },
+    {
+      "COD_CLI": 205,
+      "NOM_CLI": "WINKELMANN",
+      "DIR_CLI": "SARMIENTO 2730",
+      "LOC_CLI": "SANTA FE",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-70849733-5",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 206,
+      "NOM_CLI": "ABADIA JUAN FELIX",
+      "DIR_CLI": "RIVADAVIA Y MORENO",
+      "LOC_CLI": "ROBERTS PARTIDO LINCOLN",
+      "TEL_CLI": "2355464104",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "20-21524883-7",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 207,
+      "NOM_CLI": "DIPRE",
+      "DIR_CLI": "MAXIMO PAZ 1423",
+      "LOC_CLI": "ZARATE",
+      "TEL_CLI": "2324641313",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-71063095-6",
+      "MAI_CLI": "CRIIISLEDESMA@GMAIL.COM"
+    },
+    {
+      "COD_CLI": 208,
+      "NOM_CLI": "JUAN MANUEL BARBON",
+      "DIR_CLI": "CASADO 1536",
+      "LOC_CLI": "CASILDA",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-71776109-6",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 209,
+      "NOM_CLI": "GONZALEZ EMANUEL",
+      "DIR_CLI": "PEDRO BAÑOS 290",
+      "LOC_CLI": "PERGAMINO",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "20-31542445-4",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 210,
+      "NOM_CLI": "STIB",
+      "DIR_CLI": "CERRITO 560",
+      "LOC_CLI": "ROSARIO",
+      "TEL_CLI": "",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-68087078-7",
+      "MAI_CLI": ""
+    },
+    {
+      "COD_CLI": 211,
+      "NOM_CLI": "BASCULAS CASADOS",
+      "DIR_CLI": "Republica argentina 202",
+      "LOC_CLI": "Casilda",
+      "TEL_CLI": "3464620067",
+      "CAT_CLI": "RInscripto",
+      "CUI_CLI": "30-71107332-5",
+      "MAI_CLI": ""
+    }
+  ]
+}

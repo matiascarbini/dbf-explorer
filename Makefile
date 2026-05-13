@@ -1,4 +1,4 @@
-DBF_SOURCE_DIR ?= /home/matias/DESARROLLO/TEST/ALPASO/bases
+DBF_SOURCE_DIR ?= /home/matias/Descargas/bases
 DBF_ENCODING ?= latin1
 DBF_PAGE_SIZE ?= 100
 
